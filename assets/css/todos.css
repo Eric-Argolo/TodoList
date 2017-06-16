@@ -1,0 +1,109 @@
+/* *******   TAGS   ******* */
+body{
+	font-family: Roboto;
+	background: linear-gradient(to right, #43cea2, #185a9d);
+}
+
+h1{	
+	background-color:	#2980b9;
+	text-transform: uppercase;
+	color: white;
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight: normal;
+	margin: 0;
+}
+
+input{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: #f7f7f7;
+	font-size: 18px;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	border: solid 3px rgba(0, 0, 0, 0);
+}
+
+input:focus{
+	background-color: white;
+	border: 3px solid #2980b9;
+	outline: none;
+}
+
+li{
+	background-color: white;
+	height: 40px;
+	line-height: 40px;
+	color: black;
+}
+
+li:nth-child(2n){
+	background-color: #f7f7f7;
+}
+
+li:hover .deleteButton{
+	width: 40px;
+}
+
+li:hover span .fa-trash{
+	opacity: 1;
+}
+
+/* *******   IDs   ******* */
+#container{
+	width: 360px;
+	margin: 100px auto;
+	background-color: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+#newToDoButton{
+	float: right;
+	margin: 2px 3px;
+	background-color:	#2980b9;
+}
+
+#toDoList{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* *******   CLASSES   ******* */
+.toDo{
+	transition: opacity 0.3s ease;
+}
+
+.toDoRemoved{
+	opacity: 0;
+}
+
+.toDoCompleted{
+	text-decoration: line-through;
+	color: gray;
+}
+
+.fa-plus{
+	float: right;
+}
+
+.deleteButton{
+	background-color: #e74c3c;
+	width: 0;
+	height: 40px;
+	margin-right: 20px;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	transition: width 0.3s ease;
+}
+
+.fa-trash{
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.hiddenInput{
+	display: none;
+}
